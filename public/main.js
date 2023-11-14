@@ -1,3 +1,6 @@
+  // import '../styles/main.scss'; // You have to import your styles for them to work. Comment in this line
+  import '../styles/main.scss';
+
 // ********** HTML Components  ********** //
 // the basic HMTL structure of app
 const htmlStructure = () => {
@@ -7,8 +10,6 @@ const htmlStructure = () => {
   <div id="filter-container" class="container mb-3"></div>
   <div id="student-container" class="container d-flex"></div>
   `;
-
-  // import '../styles/main.scss'; // You have to import your styles for them to work. Comment in this line
 
   const startApp = () => {
     htmlStructure(); // always load first
@@ -58,9 +59,7 @@ const htmlStructure = () => {
         }
       }
     });
-};
-
-
+  };
 
   renderToDOM('#app', domString);
 };
@@ -93,7 +92,7 @@ const studentAreas = () => {
 
 const studentsOnDom = (divId, array, house = 'Hogwarts') => {
   let domString = '';
-  if(!array.length){
+  if (!array.length) {
     domString += `NO ${house.toUpperCase()} STUDENTS`
   }
 
