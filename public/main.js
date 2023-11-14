@@ -1,5 +1,5 @@
-  // import '../styles/main.scss'; // You have to import your styles for them to work. Comment in this line
-  import '../styles/main.scss';
+// import '../styles/main.scss'; // You have to import your styles for them to work. Comment in this line
+import '../styles/main.scss';
 
 // ********** HTML Components  ********** //
 // the basic HMTL structure of app
@@ -10,13 +10,6 @@ const htmlStructure = () => {
   <div id="filter-container" class="container mb-3"></div>
   <div id="student-container" class="container d-flex"></div>
   `;
-
-  const startApp = () => {
-    htmlStructure(); // always load first
-    header();
-    startSortingBtn();
-    events(); // always load last
-  };
 
   const students = [];
   const voldysArmy = []; // starts as an empty array
@@ -212,3 +205,12 @@ const houses = [
       'https://static.wikia.nocookie.net/pottermore/images/4/4f/Ravenclaw_crest.png'
   }
 ];
+
+
+
+const startApp = () => {
+  htmlStructure(); // always load first
+  header();
+  startSortingBtn();
+  events(); // always load last
+};
